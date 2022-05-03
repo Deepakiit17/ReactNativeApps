@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import libraries to create components
+import React from "react";
+import { Text, StyleSheet, View, StatusBar } from "react-native";
+import ChallengeFlatList from "./src/screens/ChallengeFlatList";
 
-export default function App() {
+
+// create a component that return some jsx / simple function
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      {/* <Text style={styles.textStyle}>Hello world!</Text>
+      <StatusBar style="auto" /> */}
+      <ChallengeFlatList />
     </View>
   );
-}
+};
 
+
+// Create a StyleSheet to style the component
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  textStyle: {
+    color: "red",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
+
+
+// export the file, so that we can use it elsewhere in our app
+export default App;
