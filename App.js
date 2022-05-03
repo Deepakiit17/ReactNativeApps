@@ -2,6 +2,7 @@
 import React from "react";
 import { Text, StyleSheet, View, StatusBar } from "react-native";
 import ChallengeFlatList from "./src/screens/ChallengeFlatList";
+import OurButton from "./src/screens/OurButton";
 
 
 // create a component that return some jsx / simple function
@@ -10,7 +11,8 @@ const App = () => {
     <View>
       {/* <Text style={styles.textStyle}>Hello world!</Text>
       <StatusBar style="auto" /> */}
-      <ChallengeFlatList />
+      {/* <ChallengeFlatList /> */}
+      <OurButton />
     </View>
   );
 };
