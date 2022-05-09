@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Button, Alert } from 'react-native';
+import { Text, View, StyleSheet, Button, Alert, TouchableOpacity, Image } from "react-native";
 
 const OurButton = () => {
   
@@ -12,8 +12,20 @@ const OurButton = () => {
                 // console.log("Subscribe");
                 Alert.alert("Button pressed");
             }}
-            disabled
+            // disabled
         />
+        <TouchableOpacity
+            onPress={() => {
+                console.log("Subscribe");
+                // Alert.alert("Button pressed");
+            }}
+            // disabled
+        >
+        <Image 
+            style={styles.imgStyle}
+            source={require("../../assets/text2.jpeg")}
+        />
+        <Text>Join Now</Text></TouchableOpacity>
       </View>
     );
   
@@ -24,6 +36,10 @@ const styles = StyleSheet.create({
         marginVertical: 200,
         textAlign: "center",
         fontSize: 30,
+    },
+    imgStyle: {
+        width: 200,
+        height: 200,
     },
 })
 

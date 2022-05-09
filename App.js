@@ -1,7 +1,10 @@
 // import libraries to create components
 import React from "react";
 import { Text, StyleSheet, View, StatusBar } from "react-native";
+import NetflixCard from "./src/components/NetflixCard";
+import ColorGenerator from "./src/projects/ColorGenerator";
 import ChallengeFlatList from "./src/screens/ChallengeFlatList";
+import CounterNumber from "./src/screens/CounterNumber";
 import OurButton from "./src/screens/OurButton";
 
 
@@ -12,7 +15,10 @@ const App = () => {
       {/* <Text style={styles.textStyle}>Hello world!</Text>
       <StatusBar style="auto" /> */}
       {/* <ChallengeFlatList /> */}
-      <OurButton />
+      {/* <OurButton /> */}
+      {/* <NetflixCard /> */}
+      <CounterNumber />
+      {/* <ColorGenerator /> */}
     </View>
   );
 };
